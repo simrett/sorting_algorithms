@@ -1,5 +1,8 @@
 #include "sort.h"
 
+/* Function prototype for swap */
+void swap(int *array, size_t ind_1, size_t ind_2);
+
 /**
  * bubble_sort - performs bubble sort on an array
  * @array: array to sort (of ints)
