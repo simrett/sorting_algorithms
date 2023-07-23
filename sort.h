@@ -1,14 +1,26 @@
-#ifndef __SORT_H__
-#define __SORT_H__
+#ifndef SORT_H
+#define SORT_H
 
+#include<stdio.h>
 #include <stdlib.h>
 
-/* MACROS */
-#define FALSE 0
-#define TRUE 1
+/* macros for bitonic sort */
+#define UP 0
+#define DOWN 1
 
-/* TYPES */
-typedef unsigned char BOOL;
+/* types */
+/** 
+ * enum bool - Enumeration of Boolean values.
+ * @bool_false: Represents the value false (equals 0).
+ * @bool_true: Represents the value true (equals 1).
+ *
+ */
+ 
+typedef enum bool
+{
+	bool_false = 0,
+	bool_true
+}
 
 /* STRUCTS */
 /**
@@ -25,11 +37,11 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
-/* PRINT FUNCTIONS */
+/* printing header functions */
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
 
-/* SORT FUNCTIONS */
+/* sort algotrithms */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
