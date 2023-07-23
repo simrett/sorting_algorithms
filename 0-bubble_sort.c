@@ -1,6 +1,13 @@
 #include "sort.h"
 
-/* Function prototype for swap */
+/*
+ * swap - Swaps elements in an array at two given indices.
+ * @array: Pointer to the array.
+ * @ind_1: First index to swap.
+ * @ind_2: Second index to swap.
+ *
+ * swaps the elements at indices 'ind_1' and 'ind_2' in the given array.
+ */
 void swap(int *array, size_t ind_1, size_t ind_2);
 
 /**
