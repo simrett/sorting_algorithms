@@ -6,8 +6,8 @@
 #include <stdbool.h>
 
 /* macros for bitonic sort */
-#define UP 0
-#define DOWN 1
+#define FALSE 0
+#define TRUE 1
 
 /* types */
 /** 
