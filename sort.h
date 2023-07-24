@@ -3,6 +3,7 @@
 
 #include<stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 /* macros for bitonic sort */
 #define UP 0
@@ -17,7 +18,11 @@
  */
  
 /* types */
-typedef unsigned char BOOL;
+typedef enum bool
+{
+	false =0,
+	true
+} bool;
 
 /* STRUCTS */
 /**
