@@ -16,11 +16,8 @@
  *
  */
  
-typedef enum bool
-{
-	bool_false = 0,
-	bool_true
-}
+/* types */
+typedef unsigned char BOOL;
 
 /* STRUCTS */
 /**
