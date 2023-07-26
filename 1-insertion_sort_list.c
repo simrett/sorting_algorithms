@@ -33,19 +33,19 @@ void swap_nodes(listint_t **h, listint_t **first_node, listint_t *second_node)
  */
 void insertion_sort_list(listint_t **list)
 {
-        listint_t *iter, *insert, *tmp;
+	listint_t *iter, *insert, *tmp;
 
-        if (list == NULL || *list == NULL || (*list)->next == NULL)
-                return;
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
 
-        for (iter = (*list)->next; iter != NULL; iter = tmp)
-        {
-                tmp = iter->next;
-                insert = iter->prev;
-                while (insert != NULL && iter->n < insert->n)
-                {
-                        swap_nodes(list, &insert, iter);
-                        print_list((const listint_t *)*list);
-                }
-        }
+	for (iter = (*list)->next; iter != NULL; iter = tmp)
+	{
+		tmp = iter->next;
+		insert = iter->prev;
+		while (insert != NULL && iter->n < insert->n)
+		{
+			swap_nodes(list, &insert, iter);
+			print_list((const listint_t *)*list);
+		}
+	}
 }
