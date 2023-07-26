@@ -21,7 +21,6 @@ typedef unsigned char BOOL;
 
 /**
  * int_swap - Swap two integers in an array.
- * void shell_sort(int *array, size_t size) - Sort an array using shell sort.
  * @int1: Pointer to the array of integers to be swapped.
  * @int2: Pointer to the second integer to be swapped.
  */
@@ -33,6 +32,12 @@ void int_swap(int *int1, int *int2);
  * @size: The number of elements in the array.
  */
 void shell_sort(int *array, size_t size);
+
+/*
+ * cocktail_sort_list - Sorts a doubly linked list using Cocktail Shaker Sort.
+ * @list: Double pointer to the head of the linked list.
+ */
+void cocktail_sort_list(listint_t **list);
 
 /* STRUCTS */
 /**
