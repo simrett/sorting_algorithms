@@ -33,12 +33,6 @@ void int_swap(int *int1, int *int2);
  */
 void shell_sort(int *array, size_t size);
 
-/*
- * cocktail_sort_list - Sorts a doubly linked list using Cocktail Shaker Sort.
- * @list: Double pointer to the head of the linked list.
- */
-void cocktail_sort_list(listint_t **list);
-
 /* STRUCTS */
 /**
  * struct listint_s - Doubly linked list node
