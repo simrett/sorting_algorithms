@@ -10,13 +10,12 @@
 #define TRUE 1
 
 /* types */
-/** 
- * enum bool - Enumeration of Boolean values.
+/**
+ * typedef unsigned char BOOL - Boolean data type
  * @bool_false: Represents the value false (equals 0).
  * @bool_true: Represents the value true (equals 1).
  *
  */
- 
 /* types */
 typedef unsigned char BOOL;
 
@@ -30,9 +29,9 @@ typedef unsigned char BOOL;
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /* printing header functions */
